@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: auto;
+            padding: 0;
+            background-image: url('C:\Users\HP\OneDrive\Pictures\website.jpg'); 
+            background-size: cover; 
+            background-repeat: no-repeat; 
+            background-attachment: fixed; 
+            color: #000;
+        }
+
+        .search-bar {
+            padding: auto;
+            background-color: #287bcd;
+            text-align: center;
+            position: sticky;
+            top: 0px;
+        }
+
+        .search-bar input[type="text"] {
+            padding: 5px;
+            font-size: 16px;
+        }
+
+        .search-bar button {
+            padding: 5px 10px;
+            font-size: 16px;
+            background-color: #eceae1;
+            border: none;
+            cursor: pointer;
+        }
+
+        .search-bar button:hover {
+            background-color: #ff9900;
+        }
+
+        .search-feedback {
+            color: red;
+            font-size: 14px;
+            text-align: center;
+            display: none; 
+        }
+
+        header {	
+		    background-color: lightgrey;
+            background-size: cover;
+            background-position: center;
+            padding: 20px 0;
+            text-align: center;
+			font-family: Bell MT, sans-serif;
+        }
+
+       
+        @keyframes rgbBlink {
+            0% { color: rgb(255, 0, 0); }
+            20%{ color: rgb(246, 255, 0); }
+            40% { color: rgb(0, 255, 0); }
+            60% { color: rgb(0, 0, 255); }
+            80% { color: rgb(22, 1, 92); }
+            100% { color: rgb(255, 0, 0); }
+        }
+
+        h1 {
+            animation: rgbBlink 3s infinite;
+        }
+
+        nav {
+            background-color: #004080; 
+            display: flex;
+            justify-content: space-around;
+            padding: auto 0;
+            position: sticky;
+            top: 31px;
+        }
+
+        nav a {
+            color: white; 
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px;
+            
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+            color: #ffcc00;
+            position: sticky;
+            top: 0px;
+        }
+
+        section {
+            background-color: white;
+            padding: 10px;
+            margin: auto;
+            box-shadow: -100px -10px 100px rgba(11, 1, 83, 0.9);
+            font-family: Aptos;
+            font-size: 18px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 5px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            box-shadow: -100px -10px 100px rgba(11, 1, 83, 0.9);
+
+        }
+
+        .container {
+            width: 100%;
+            margin: auto;
+        }
+
+        h2 {
+            color: #003366;
+        }
+
+
+        .highlight {
+            background-color: yellow;
+            font-weight: bold;
+        }
+
+ 
+        .no-result {
+            color: red;
+            font-weight: bold;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    
+    <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search..." onkeyup="searchContent(event)">
+        <button onclick="searchContent()">Search</button>
+    </div>
+
+    <div class="search-feedback" id="noResultMessage">Can't find any result</div>
+
+    <header>
+        <h1><center>Hello User<br>Welcome My WebPage</center></h1>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#education">Educational Background</a>
+        <a href="#experience">Experience</a>
+        <a href="#publications">Publications</a>
+        <a href="#awards">Awards</a>
+        <a href="#projects">Projects</a>
+        <a href="#Membership">Membership</a>
+        <a href="#Research">Research</a>
+        <a href="#Event">Events</a>
+        <a href="#Paper">Papers</a>
+        <a href="#Courses">Courses</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        <section id="home">
+            <h2><center>Home</center></h2>
+            <p style="font-family: Arial, sans-serif; font-size: 16px;font-style: italic;"><b>Hello sir, how can I help you?</p>
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p style="font-family: Arial, sans-serif; font-size: 16px;font-style: italic;">Hi myself <b>Reet Habar</b><br>Vill- <b>Banpur</b>,P.O-<b>Kharui</b>,P.S-<b>Tamluk</b><br>DIST-<b>Purba Medinipur</b><br>PIN-<b>721134</b></p>
+        </section>
+
+        <section id="education">
+            <h2>Educational Background</h2>
+            <p style="font-family: Arial, sans-serif; font-size: 16px;font-style: italic;">I completed my Secondary & Higher Secondary from Kharui Union High School (WBBSE & WBCHSE)<br>Completed my B-Tech in CSE (DATA SCIENCE) from IEM Newtown (AICTE, UGC approved)</p>
+        </section>
+
+<section id="experience">
+            <h2>Experience</h2>
+            <p style="font-family: Arial, sans-serif; font-size: 16px;font-style: italic;">I have experience in programming languages like C, C++, Python, HTML, CSS, JavaScript</p>
+        </section>
+
+        <section id="publications">
+            <h2>Publications</h2>
+            <p style="font-family: Arial, sans-serif; font-size: 16px;font-style: italic;">N/A</p>
+        </section>
+
+        <section id="awards">
+            <h2>Awards</h2>
+            <p style="font-family: Arial, sans-serif; font-size: 16px;font-style: italic;">Won first place in an inter-school drawing competition.<br>Awarded 4 times by Bharat Kala Kendra for good drawing.</p>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <p style="font-family: Arial, sans-serif; font-size: 16px;font-style: italic;">Working on a face detection program<br>Thinking about an innovation that can change the whole world</p>
+        </section>
+
+        <section id="Membership">
+            <h2>Membership</h2>
+            <p style="font-family: Arial, sans-serif; font-size: 16px;font-style: italic;">BGMI Membership</p>
+        </section>
+
+        <section id="Research">
+            <h2>Research</h2>
+            <p style="font-family: Arial, sans-serif; font-size: 16px;font-style: italic;">N/A</p>
+        </section>
+
+        <section id="Event">
+            <h2>Event</h2>
+            <p style="font-family: Arial, sans-serif; font-size: 16px;font-style: italic;">No</p>
+        </section>
+
+        <section id="Paper">
+            <h2>Paper</h2>
+            <p style="font-family: Arial, sans-serif; font-size: 16px;font-style: italic;">N/A</p>
+        </section>
+
+        <section id="Courses">
+            <h2>Courses</h2>
+            <p style="font-family: Arial, sans-serif; font-size: 16px;font-style: italic;">Running NPTEL course<br> Completed B Tech CSE in 2028</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p style="font-family: Arial, sans-serif; font-size: 16px;font-style: italic;">For extra details contact:<br>Email: reethabar@gmail.com<br>Ph.no:7586926570</b></p>
+        </section>
+
+
+    </div>
+
+    <footer>
+        <p>Copyright &copy; 08.10.2024 <br>Reet Habar</p>
+    </footer>
+
+    <script>
+
+function searchContent(event) {
+    let input = document.getElementById("searchInput").value.toLowerCase();
+    let sections = document.querySelectorAll("section");
+    let found = false; 
+    let feedback = document.getElementById("noResultMessage");
+
+    if (event && event.keyCode === 13) {
+        event.preventDefault(); 
+    }
+
+    sections.forEach(section => {
+        let text = section.innerHTML.replace(/<mark>|<\/mark>/g, ""); 
+                    section.innerHTML = text;
+    });
+
+    sections.forEach(section => {
+        let text = section.innerHTML.toLowerCase();
+        if (text.includes(input)) {
+            let regex = new RegExp(`(${input})`, 'gi');
+            section.innerHTML = section.innerHTML.replace(regex, "<mark>$1</mark>"); 
+            found = true;
+        }
+    });
+
+    if (!found) {
+        feedback.style.display = 'block';
+    } else {
+        feedback.style.display = 'none';
+    }
+}
+
+document.getElementById("searchInput").addEventListener("keyup", searchContent);
+
+    </script>
+
+</body>
+</html>
